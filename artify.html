@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artify - AI Image Generator</title>
+  <link rel="stylesheet" href="artify.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>🎨 Artify</h1>
+    <input type="text" id="prompt" placeholder="Enter your prompt..." />
+    <button id="generateBtn">Generate</button>
+    <div id="loader" class="loader" style="display:none;"></div>
+    <div id="image-container"></div>
+    <a id="downloadBtn" download="artify-image.png" style="display:none;">⬇️ Download</a>
+    <button id="leaveBtn" class="leave-button">Leave</button>
+  </div>
+
+  <!-- Leave confirmation popup -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup-box">
+      <p>Are you sure you want to leave Artify?</p>
+      <button id="confirmLeave">Yes</button>
+      <button id="cancelLeave">Cancel</button>
+    </div>
+  </div>
+
+  <script src="artify.js"></script>
+</body>
+</html>
